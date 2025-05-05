@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taja Bakery - Our Delicious Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="taja-logo.png" alt="Taja Bakery Logo" class="bakery-logo">
+        </div>
+        <h1>Taja Bakery</h1>
+        <p class="tagline">Handcrafted cakes for every celebration</p>
+        <p>Our cakes are made fresh daily using only the finest quality ingredients.</p>
+    </header>
+
+    <main>
+        <div class="cake-tabs">
+            <button class="tab-button active" onclick="openCakeCategory(event, 'classic-cakes')">Classics</button>
+            <button class="tab-button" onclick="openCakeCategory(event, 'chocolate-cakes')">Chocolate Cakes</button>
+            <button class="tab-button" onclick="openCakeCategory(event, 'red-velvet-cakes')">Red Velvet Cakes</button>
+            <button class="tab-button" onclick="openCakeCategory(event, 'vanilla-cakes')">Vanilla Cakes</button>
+            <button class="tab-button" onclick="openCakeCategory(event, 'jelly-cakes')">Jelly Cakes</button>
+            <button class="tab-button" onclick="openCakeCategory(event, 'specialty-cakes')">Specialty Cakes</button>
+        </div>
+        
+        <!-- Classic Cakes Tab -->
+        <div id="classic-cakes" class="cake-category active">
+            <h2 class="category-title">Classic Cakes</h2>
+            
+            <!-- Black Forest Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Black Forest Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                        </div>
+                        <h3 class="cake-name">Black Forest Cake</h3>
+                        <p class="cake-description">Traditional German cake featuring layers of chocolate sponge, whipped cream, and cherries, topped with chocolate shavings.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$42.00 - $78.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic Black Forest decoration with whipped cream and cherries.</p>
+                                <ul class="option-features">
+                                    <li>Whipped cream frosting</li>
+                                    <li>Cherry topping</li>
+                                    <li>Chocolate shavings</li>
+                                </ul>
+                                <span class="option-price">From $42.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Deluxe Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Deluxe Design</h5>
+                                <p class="option-description">Elevated Black Forest with premium decoration and chocolate work.</p>
+                                <ul class="option-features">
+                                    <li>Chocolate ganache drip</li>
+                                    <li>Chocolate curls and decorations</li>
+                                    <li>Premium cherries</li>
+                                    <li>Gold dust accents</li>
+                                </ul>
+                                <span class="option-price">From $58.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- White Forest Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="White Forest Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                        </div>
+                        <h3 class="cake-name">White Forest Cake</h3>
+                        <p class="cake-description">A delightful twist on the classic Black Forest, featuring layers of vanilla sponge with whipped cream and cherries, topped with white chocolate shavings.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$45.00 - $80.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic White Forest decoration with whipped cream and cherries.</p>
+                                <ul class="option-features">
+                                    <li>Whipped cream frosting</li>
+                                    <li>Cherry topping</li>
+                                    <li>White chocolate shavings</li>
+                                </ul>
+                                <span class="option-price">From $45.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Deluxe Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Deluxe Design</h5>
+                                <p class="option-description">Elevated White Forest with premium decoration and white chocolate work.</p>
+                                <ul class="option-features">
+                                    <li>White chocolate ganache drip</li>
+                                    <li>White chocolate curls</li>
+                                    <li>Premium cherries</li>
+                                    <li>Silver dust accents</li>
+                                </ul>
+                                <span class="option-price">From $62.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Vanilla Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Vanilla Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                            <span class="badge vegan">Vegan Option</span>
+                        </div>
+                        <h3 class="cake-name">Vanilla Cake</h3>
+                        <p class="cake-description">Light and fluffy vanilla cake with a delicate flavor, perfect for any occasion and customizable with various fillings and frostings.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$40.00 - $75.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            Vegan option available by request (+$5)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic vanilla cake with smooth buttercream and minimal decoration.</p>
+                                <ul class="option-features">
+                                    <li>Smooth vanilla buttercream</li>
+                                    <li>Simple piped border</li>
+                                    <li>Basic text message</li>
+                                </ul>
+                                <span class="option-price">From $40.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Deluxe Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Deluxe Design</h5>
+                                <p class="option-description">Premium vanilla cake with elegant decoration and custom elements.</p>
+                                <ul class="option-features">
+                                    <li>Decorative buttercream techniques</li>
+                                    <li>Fresh flower decorations</li>
+                                    <li>Custom color palette</li>
+                                    <li>Personalized design elements</li>
+                                </ul>
+                                <span class="option-price">From $60.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chocolate Cakes Tab -->
+        <div id="chocolate-cakes" class="cake-category">
+            <h2 class="category-title">Chocolate Cakes</h2>
+            
+            <!-- Chocolate Truffle Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Chocolate Truffle Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                        </div>
+                        <h3 class="cake-name">Chocolate Truffle Cake</h3>
+                        <p class="cake-description">Our signature chocolate cake featuring layers of moist chocolate sponge filled with smooth chocolate ganache and covered in decadent chocolate truffle frosting.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$38.00 - $75.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                                <span class="size-option">Quarter Sheet (serves 20-25)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat, Soy<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Basic decoration with smooth frosting and minimal details.</p>
+                                <ul class="option-features">
+                                    <li>Smooth frosting finish</li>
+                                    <li>Simple piped border</li>
+                                    <li>Basic text message</li>
+                                </ul>
+                                <span class="option-price">From $38.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Premium Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Premium Design</h5>
+                                <p class="option-description">Elaborate decoration with handcrafted details and artistic elements.</p>
+                                <ul class="option-features">
+                                    <li>Complex piping techniques</li>
+                                    <li>Handcrafted fondant decorations</li>
+                                    <li>Multiple color coordination</li>
+                                    <li>Personalized design elements</li>
+                                </ul>
+                                <span class="option-price">From $65.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Red Velvet Cakes Tab -->
+        <div id="red-velvet-cakes" class="cake-category">
+            <h2 class="category-title">Red Velvet Cakes</h2>
+            
+            <!-- Red Velvet Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Red Velvet Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                        </div>
+                        <h3 class="cake-name">Red Velvet Cake</h3>
+                        <p class="cake-description">Our elegant red velvet cake with its signature subtle cocoa flavor, topped with classic cream cheese frosting for that perfect tangy-sweet balance.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$42.00 - $80.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                                <span class="size-option">Quarter Sheet (serves 20-25)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic red velvet with cream cheese frosting and simple decoration.</p>
+                                <ul class="option-features">
+                                    <li>Smooth cream cheese frosting</li>
+                                    <li>Red velvet crumbs decoration</li>
+                                    <li>Basic text message</li>
+                                </ul>
+                                <span class="option-price">From $42.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Premium Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Premium Design</h5>
+                                <p class="option-description">Elegant red velvet with decorative elements and premium finishes.</p>
+                                <ul class="option-features">
+                                    <li>White chocolate ganache drip</li>
+                                    <li>Decorative piping details</li>
+                                    <li>Fresh berries decoration</li>
+                                    <li>Gold or silver accents</li>
+                                </ul>
+                                <span class="option-price">From $62.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vanilla Cakes Tab -->
+        <div id="vanilla-cakes" class="cake-category">
+            <h2 class="category-title">Vanilla Cakes</h2>
+            
+            <!-- Vanilla Bean Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Vanilla Bean Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                            <span class="badge vegan">Vegan Option</span>
+                        </div>
+                        <h3 class="cake-name">Vanilla Bean Cake</h3>
+                        <p class="cake-description">Light and fragrant vanilla bean cake that serves as the perfect canvas for countless flavor combinations. Made with real vanilla beans for authentic flavor.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$40.00 - $75.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                                <span class="size-option">Quarter Sheet (serves 20-25)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            Vegan option available by request (+$5)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic vanilla cake with smooth buttercream and minimal decoration.</p>
+                                <ul class="option-features">
+                                    <li>Smooth vanilla buttercream</li>
+                                    <li>Simple piped border</li>
+                                    <li>Basic text message</li>
+                                </ul>
+                                <span class="option-price">From $40.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Deluxe Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Deluxe Design</h5>
+                                <p class="option-description">Premium vanilla cake with elegant decoration and custom elements.</p>
+                                <ul class="option-features">
+                                    <li>Decorative buttercream techniques</li>
+                                    <li>Fresh flower decorations</li>
+                                    <li>Custom color palette</li>
+                                    <li>Personalized design elements</li>
+                                </ul>
+                                <span class="option-price">From $60.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Jelly Cakes Tab -->
+        <div id="jelly-cakes" class="cake-category">
+            <h2 class="category-title">Jelly Cakes</h2>
+            
+            <!-- Strawberry Jelly Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Strawberry Jelly Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge bestseller">Bestseller</span>
+                            <span class="badge seasonal">Seasonal</span>
+                        </div>
+                        <h3 class="cake-name">Strawberry Jelly Cake</h3>
+                        <p class="cake-description">Delicate sponge cakes dipped in strawberry jelly and coated with coconut, filled with Chantilly cream for a nostalgic treat.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$40.00 - $75.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">Individual (serves 1)</span>
+                                <span class="size-option">Small Platter (serves 12)</span>
+                                <span class="size-option">Large Platter (serves 24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Classic Jelly Cake" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Classic Jelly Cake</h5>
+                                <p class="option-description">Traditional strawberry jelly cake with coconut coating.</p>
+                                <ul class="option-features">
+                                    <li>Strawberry jelly coating</li>
+                                    <li>Coconut flakes</li>
+                                    <li>Chantilly cream filling</li>
+                                </ul>
+                                <span class="option-price">From $40.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Deluxe Jelly Cake" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Deluxe Jelly Cake</h5>
+                                <p class="option-description">Premium strawberry jelly cake with extra decorative elements.</p>
+                                <ul class="option-features">
+                                    <li>Premium strawberry jelly</li>
+                                    <li>Toasted coconut flakes</li>
+                                    <li>Fresh strawberry pieces</li>
+                                    <li>Vanilla bean Chantilly cream</li>
+                                </ul>
+                                <span class="option-price">From $55.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pineapple Jelly Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Pineapple Jelly Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge seasonal">Seasonal</span>
+                        </div>
+                        <h3 class="cake-name">Pineapple Jelly Cake</h3>
+                        <p class="cake-description">Tropical-inspired jelly cake with pineapple flavored jelly and coconut coating, filled with pineapple cream.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$42.00 - $78.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">Individual (serves 1)</span>
+                                <span class="size-option">Small Platter (serves 12)</span>
+                                <span class="size-option">Large Platter (serves 24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Classic Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Classic Design</h5>
+                                <p class="option-description">Traditional pineapple jelly cake with coconut coating.</p>
+                                <ul class="option-features">
+                                    <li>Pineapple jelly coating</li>
+                                    <li>Coconut flakes</li>
+                                    <li>Pineapple cream filling</li>
+                                </ul>
+                                <span class="option-price">From $42.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Tropical Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Tropical Design</h5>
+                                <p class="option-description">Premium pineapple jelly cake with tropical decorative elements.</p>
+                                <ul class="option-features">
+                                    <li>Premium pineapple jelly</li>
+                                    <li>Toasted coconut flakes</li>
+                                    <li>Candied pineapple pieces</li>
+                                    <li>Tropical fruit decorations</li>
+                                </ul>
+                                <span class="option-price">From $58.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blueberry Jelly Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Blueberry Jelly Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge new">New</span>
+                        </div>
+                        <h3 class="cake-name">Blueberry Jelly Cake</h3>
+                        <p class="cake-description">Vibrant blueberry jelly cake with a hint of lemon, coated in coconut and filled with blueberry cream.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$45.00 - $82.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">Individual (serves 1)</span>
+                                <span class="size-option">Small Platter (serves 12)</span>
+                                <span class="size-option">Large Platter (serves 24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Classic Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Classic Design</h5>
+                                <p class="option-description">Traditional blueberry jelly cake with coconut coating.</p>
+                                <ul class="option-features">
+                                    <li>Blueberry jelly coating</li>
+                                    <li>Coconut flakes</li>
+                                    <li>Blueberry cream filling</li>
+                                </ul>
+                                <span class="option-price">From $45.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Berry Deluxe Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Berry Deluxe Design</h5>
+                                <p class="option-description">Premium blueberry jelly cake with extra berry decorations.</p>
+                                <ul class="option-features">
+                                    <li>Premium blueberry jelly</li>
+                                    <li>Toasted coconut flakes</li>
+                                    <li>Fresh blueberry topping</li>
+                                    <li>Lemon zest accents</li>
+                                </ul>
+                                <span class="option-price">From $62.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Specialty Cakes Tab -->
+        <div id="specialty-cakes" class="cake-category">
+            <h2 class="category-title">Specialty Cakes</h2>
+            
+            <!-- Lemon Raspberry Cake -->
+            <div class="cake-container">
+                <div class="cake-header">
+                    <img src="/api/placeholder/400/320" alt="Lemon Raspberry Cake" class="main-cake-image">
+                    <div class="cake-main-info">
+                        <div class="badges-container">
+                            <span class="badge seasonal">Seasonal</span>
+                        </div>
+                        <h3 class="cake-name">Lemon Raspberry Cake</h3>
+                        <p class="cake-description">Bright and refreshing lemon cake with raspberry filling, perfect for spring and summer celebrations.</p>
+                        
+                        <div class="cake-basics">
+                            <p class="cake-basics-label">Base Price Range:</p>
+                            <p>$45.00 - $85.00 depending on size and decoration</p>
+                            
+                            <p class="cake-basics-label">Available Sizes:</p>
+                            <div class="size-options">
+                                <span class="size-option">6" Round (serves 8-10)</span>
+                                <span class="size-option">8" Round (serves 12-16)</span>
+                                <span class="size-option">10" Round (serves 20-24)</span>
+                            </div>
+                        </div>
+                        
+                        <button class="accordion">Dietary Information</button>
+                        <div class="panel">
+                            <p style="padding: 15px 0;">Contains: Eggs, Dairy, Wheat<br>
+                            Gluten-free option available by request (+$5)<br>
+                            This cake cannot be made vegan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cake-options-section">
+                    <h4 class="options-title">Design Options</h4>
+                    <div class="cake-options-grid">
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Simple Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Simple Design</h5>
+                                <p class="option-description">Classic lemon raspberry cake with basic decoration.</p>
+                                <ul class="option-features">
+                                    <li>Lemon buttercream frosting</li>
+                                    <li>Fresh raspberry garnish</li>
+                                    <li>Simple piped details</li>
+                                </ul>
+                                <span class="option-price">From $45.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="option-card">
+                            <img src="/api/placeholder/400/320" alt="Garden Party Design" class="option-image">
+                            <div class="option-info">
+                                <h5 class="option-name">Garden Party Design</h5>
+                                <p class="option-description">Elegant decoration perfect for garden parties and spring events.</p>
+                                <ul class="option-features">
+                                    <li>Edible flower decorations</li>
+                                    <li>Lemon and raspberry garnishes</li>
+                                    <li>Decorative buttercream patterns</li>
+                                    <li>Custom color accents</li>
+                                </ul>
+                                <span class="option-price">From $65.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="how-to-order">
+            <h3>How to Order Your Custom Cake</h3>
+            <ol class="steps">
+                <li>Choose your cake base from our selection above</li>
+                <li>Select the size that fits your event</li>
+                <li>Pick your preferred design option</li>
+                <li>Discuss any special requests or customizations</li>
+                <li>Place your order at least 48 hours in advance (72 hours for custom designs)</li>
+                <li>Pay a 50% deposit to confirm your order</li>
+            </ol>
+            <p style="text-align: center; margin-top: 20px; font-weight: bold;">For custom inquiries, please call us at (555) 123-4567 or email info@tajabakery.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="footer-heading">Taja Bakery</h3>
+        <div class="contact-info">
+            <h4>Our Outlets:</h4>
+            <div class="locations-grid">
+                <div class="location">
+                    <p class="location-name">Sitapaila</p>
+                    <p>01-4567890</p>
+                </div>
+                <div class="location">
+                    <p class="location-name">Chabahil</p>
+                    <p>01-4567891</p>
+                </div>
+                <div class="location">
+                    <p class="location-name">Chhetrapati</p>
+                    <p>01-4567892</p>
+                </div>
+                <div class="location">
+                    <p class="location-name">Lagan</p>
+                    <p>01-4567893</p>
+                </div>
+                <div class="location">
+                    <p class="location-name">Galkopakha</p>
+                    <p>01-4567894</p>
+                </div>
+            </div>
+            <p class="head-office">Head Office: 01-4811602</p>
+            <p>Place your order at least 48 hours in advance for custom cakes</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
